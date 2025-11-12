@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Exemplo de criptografia</title>
+        <link rel="stylesheet" href="/static/css/loginStyle.css">
+    </head>
     <body>
+        <div id="mainBox">
         <h3>LOGIN</h3>
+        <div id="formBox">
         <form action="/login" method="POST" id="loginForm">
             <input type="email" name="email" placeholder="Email"></input>
             <input type="password" name="senha" placeholder="Senha"></input>
             <input type="button" value="Login com criptografia" id="loginButton"></input>
             <input type="submit" value="Login sem criptografia" ></input>
         </form>
+        </div>
+        </div>
         <script src="/static/js/jsencrypt.js"></script>
         <script src="/static/js/loginScript.js"></script>
     </body>

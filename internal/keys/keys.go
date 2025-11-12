@@ -82,4 +82,5 @@ func DecryptMessage(w http.ResponseWriter, r *http.Request) {
 	}
 
 	fmt.Println(string(plaintext))
+	w.Write([]byte("/main"))
 }

@@ -24,5 +24,9 @@ async function onSubmit() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({encrypted})
-    })
+    }).then(response => response.text())
+        .then(url => {
+            // Redirect the browser manually
+            window.location.href = url; 
+        })
 }
